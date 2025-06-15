@@ -1,0 +1,45 @@
+{
+	"name": "Krunker.io Resource Swapper",
+	"version": "0.0.1",
+	"manifest_version": 3,
+	"description": "https://github.com/a7a7-7",
+	"permissions": [
+		"declarativeNetRequest",
+		"declarativeNetRequestWithHostAccess"
+	],
+	"host_permissions": [
+		"*://*.krunker.io/*",
+		"http://127.0.0.1:8080/*"
+	],
+	"web_accessible_resources": [
+		{
+			"resources": [
+			"/**/*.obj",
+			"/**/*.png",
+			"/**/*.mp3",
+			"/**/*.css",
+			"/**/*.json",
+			"/**/*.ttf",
+			"/**/*.otf",
+			"/**/*.ico",
+			"/**/*.svg",
+			"/**/*.txt"
+			],
+			"matches": ["<all_urls>"]
+		}
+	]
+	,
+	"background": {
+		"service_worker": "init.js",
+		"type": "module"
+	},
+	"declarative_net_request": {
+		"rule_resources": [
+			{
+			"id": "redirect-rules",
+			"enabled": true,
+			"path": "rules.json"
+			}
+		]
+	}
+}
