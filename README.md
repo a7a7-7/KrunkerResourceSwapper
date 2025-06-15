@@ -12,7 +12,7 @@ Clone the repository using the following command or download the source code as 
 git clone https://github.com/a7a7-7/KrunkerResourceSwapper
 ```
 
-Then, open the Chrome extensions page (`chrome://extensions`), enable **Developer mode**, click **Load unpacked**, and select the `KrunkerResourceSwapper` directory.
+Then, open the Chrome [extensions page](chrome://extensions), enable **Developer mode**, click **Load unpacked**, and select the `KrunkerResourceSwapper` directory.
 
 ---
 
